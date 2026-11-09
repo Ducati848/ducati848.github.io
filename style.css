@@ -1,0 +1,20 @@
+:root{color-scheme:light;--navy:#0b2340;--navy2:#142d4b;--ink:#18283b;--muted:#53677d;--line:#dfe8ef;--teal:#047a7c;--orange:#e88932;--cream:#f7fbfd;--soft:#eaf6f5}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(145deg,#e6f0f4 0%,#f5f8fb 48%,#e6eef5 100%);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.8;min-height:100vh}
+main{max-width:850px;margin:48px auto 64px;padding:40px 54px 46px;background:#fff;border:1px solid #e3ebf1;border-radius:22px;box-shadow:0 20px 68px rgba(18,45,72,.09)}
+header{display:flex;gap:22px;align-items:center;padding:0 0 29px;margin:0 0 31px;border-bottom:2px solid var(--line)}
+header img{width:92px;height:92px;border-radius:22px;object-fit:cover;box-shadow:0 10px 22px rgba(6,24,44,.16);flex:none}
+h1{font-size:clamp(1.65rem,3.6vw,2.35rem);line-height:1.23;letter-spacing:-.03em;color:var(--navy);margin:8px 0 7px;font-weight:800}
+h2{margin:31px 0 12px;font-size:1.2rem;line-height:1.4;letter-spacing:-.012em;color:var(--navy);font-weight:750}
+h2:first-of-type{margin-top:0}
+p{margin:12px 0 16px;font-size:1rem}ul{margin:12px 0 18px;padding-left:24px}li{padding:3px 0}li::marker{color:var(--teal)}
+header small{font-size:.95rem;color:var(--muted)}.tag{display:inline-block;font-weight:650;font-size:.75rem;line-height:1.5;letter-spacing:.015em;padding:5px 11px;background:var(--soft);color:#08646b;border:1px solid #d5eceb;border-radius:20px}
+a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:#054d55}a:focus-visible{outline:3px solid var(--orange);outline-offset:4px;border-radius:3px}
+code{font-size:.94em;background:#f1f5f8;padding:2px 6px;border-radius:5px;word-break:break-word}
+nav{display:flex;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:24px;margin-top:34px}
+nav a{display:inline-flex;align-items:center;border-radius:8px;text-decoration:none;font-weight:670;padding:8px 13px;background:#f0f6f8;border:1px solid #e3ecf2}
+nav a:hover{background:#e8f2f3}
+.muted{color:var(--muted);font-size:.88rem;margin-top:20px}
+@media(max-width:670px){main{margin:0;min-height:100vh;padding:27px 23px 36px;border-radius:0;border:0}header{gap:16px;align-items:flex-start}header img{width:67px;height:67px;border-radius:15px}header small{font-size:.84rem}h1{margin:6px 0 4px}p,li{font-size:.96rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
